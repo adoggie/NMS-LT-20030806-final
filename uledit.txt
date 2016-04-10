@@ -1,0 +1,36 @@
+
+/L8"Python" Line Comment = # Block Comment On =  Escape Char = \ String Chars = "' File Extensions = PY PYW
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
+/Function String = "%[a-zA-Z_]* ^([a-zA-Z_]+^)(*)[~;]"
+/Function String 1 = "%[a-zA-Z_]*::^([a-zA-Z_]+^)(*)[~;]"
+/Indent Strings = "{"
+/Unindent Strings = "}"
+/C1"Keywords"
+for
+keys
+while 
+if 
+elif
+else 
+continue break
+import 
+from
+:
+def
+class 
+__name__
+lambda
+pass
+
+/C4"Operators"
++
+-
+=
+// /
+%
+&
+>
+<
+^
+!
+|

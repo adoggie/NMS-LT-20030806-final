@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title></title>
+<style type="text/css">
+<!--
+TR {
+	font-size: 12px;
+	text-align: center;
+}
+-->
+</style>
+</head>
+
+<body>
+<p >区域设备信息</p>
+<p>区域: <%AREA_NAME%></p>
+<table width="100%" border="1" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="14%" height="26">
+<div align="center">直放站编号</div></td>
+    <TD  ><div align="center">设备名称</div></td>
+    <td  ><div align="center">通信模式</div></td>
+    <td  ><div align="center">设备电话</div></td>
+    <td  ><div align="center">设备编号</div></td>
+    <td  ><div align="center">设备类型</div></td>
+    <td  ><div align="center">供应商</div></td>
+	<td ><div align="center">放置地点</div></td>
+  </tr>
+  <%ROW_START%>
+  <tr %ROW_COLOR%> 
+    <td class="lb"> 
+      <%REPEATER_ID%>
+    </td>
+    <td class="lb"> 
+      <%NAME%>
+    </td>
+    <td> 
+      <%COMM_TYPE%>
+    </td>
+    <td> 
+      <%REPEATER_PHONE%>
+    </td>
+    <td> 
+      <%EQUIPMENT_ID%>
+    </td>
+    <td> 
+      <%DEVCAT%>
+    </td>
+    <td> 
+      <%PROVIDER%>
+    </td>
+    <td> 
+      <%SITE%>
+    </td>
+	
+  </tr>
+   <%ROW_END%>
+</table>
+<p>打印时间:<%TIME%></p>
+</body>
+</html>
+

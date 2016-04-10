@@ -1,0 +1,2 @@
+1. 刷新告警个数问题
+此问题在成美nms1900G中同样存在，问题在于在 PaneArea::set()中，使用了session.repeaters而不是session.user.repeaters

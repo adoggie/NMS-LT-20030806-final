@@ -1,0 +1,49 @@
+1. 添加子设备未通知MSS 
+--------------------------
+2003.05.15  修正。
+
+2.RepeaterList::show添加设备产生不回收内存现象
+-------------------------------------------------
+2003.05.15
+	程序中写道:
+		for i in self.devlist:
+			r = Repeater(self.tl,i['ID'],self)	#添加设备		
+			self.tl.insert('end',itemtype='window',window=r)
+			pass
+	当self.tl删除所有内部子项时,Repeater其实没有被del，产生内存没有被回收.
+   修正:	
+   RepeaterList::show函数中添加以下方法,用以手动释放tkinter对象和数据
+		dev_cnt = self.tl.tk.call(self.tl,'info','size')
+		for i in range(int(dev_cnt)):
+			w = self.tl.tk.call(self.tl,'entrycget',i,'-window')
+			w = self.nametowidget(w)
+			w.__del__()
+			w.destroy()
+3. 系统登录失败
+---------------------
+2003.05.15
+	系统2次登录失败，在于对	session.dbcnnstr 格式的失败
+	Login::login()函数:	
+	session.dbcnnstr =session.dbcnnstr_template% self.dbserver.getvalue()			
+
+4. 2003.05.16  添加设备信息窗体的标题
+5. 2003.05.16  
+   现象:
+	显示设备状态和设备信息的时候，每当数据刷新时，窗体消失。
+   分析:
+	在repeaterlist.py 的 class SingleDev::onstatus 中，创建状态窗体传递了singledev作为窗体的owner,
+  	当刷新设备状态时，删除所有设备然后重新加入设备的方法，所以导致创建的状态窗体的owner被撤销，导致
+	状态窗体消失 
+   解决:
+	取消定时刷新功能，改用手动刷新
+
+-------------------------------
+6. 2003.06.04
+-------------------------------
+	1.增加区域告警个数定时刷新
+ 	2.增加设备超时定时刷新和超时设备显示
+
+
+
+
+

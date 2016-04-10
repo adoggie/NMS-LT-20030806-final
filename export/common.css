@@ -1,0 +1,87 @@
+TD {
+	FONT-SIZE: 9px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+.p1 {
+	FONT-SIZE: 12px
+}
+P {
+	FONT-SIZE: 12px; LINE-HEIGHT: 130%
+}
+DIV {
+	FONT-SIZE: 12px; LINE-HEIGHT: 130%
+}
+.p2 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 130%
+}
+.vip {
+	COLOR: #ffffff; FONT-SIZE: 12px
+}
+.p3 {
+	FONT-SIZE: 14px
+}
+.p4 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 130%
+}
+.p5 {
+	FONT-FAMILY: arial; FONT-SIZE: 10px
+}
+.p6 {
+	LINE-HEIGHT: 160%
+}
+.p7 {
+	LINE-HEIGHT: 180%
+}
+.hot {
+	COLOR: #ff3300
+}
+A:link {
+	COLOR: #000066
+}
+A:visited {
+	COLOR: #000066
+}
+A.lb:link {
+	COLOR: black
+}
+A.lb:visited {
+	COLOR: black
+}
+A.lg:link {
+	COLOR: #717171
+}
+A.lg:visited {
+	COLOR: #717171
+}
+A:hover {
+	COLOR: red
+}
+A.lb:hover {
+	COLOR: red
+}
+.pw {
+	COLOR: white
+}
+A.lw:link {
+	COLOR: white
+}
+A.lw:visited {
+	COLOR: white
+}
+A.ch:link {
+	COLOR: #697111
+}
+A.ch:visited {
+	COLOR: #697111
+}
+.sinput {
+	BACKGROUND-COLOR: #cccccc; BORDER-BOTTOM: 1px ridge; BORDER-LEFT: #ffffff 1px ridge; BORDER-RIGHT: 1px ridge; BORDER-TOP: #ffffff 1px ridge
+}
+.ring {
+	COLOR: #000066; FONT-FAMILY: webdings; FONT-SIZE: 12px
+}
